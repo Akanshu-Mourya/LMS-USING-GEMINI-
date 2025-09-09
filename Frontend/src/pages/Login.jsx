@@ -92,7 +92,7 @@ function Login() {
                     >
                         {loading ? <ClipLoader size={30} color='white' /> : "Login"}
                     </button>
-                    <span className='text-[13px] cursor-pointer text-[#585757]'>Forget your password?</span>
+                    <span className='text-[13px] cursor-pointer text-[#585757]' onClick={()=>navigate("/forget")}>Forget your password?</span>
                     <div className='w-[80%] flex items-center gap-2'>
                         <div className='w-[25%] h-[0.5px] bg-[#c4c4c4]'></div>
                         <div className='w-[50%] text-[15px] text-[#6f6f6f] flex items-center justify-center'>Or continue</div>
@@ -103,7 +103,7 @@ function Login() {
                         <span className='text-[18px] text-gray-500'>oogle</span>
                     </div>
                     <div className='text-[#6f6f6f]'>Create new account
-                        <span className='underline underline-offset-1 text-[black] cursor-pointer m-1' onClick={() => navigate("/singup")}>SignUp</span>
+                        <span className='underline underline-offset-1 text-[black] cursor-pointer m-1' onClick={() => navigate("/signup")}>SignUp</span>
                     </div>
                 </div>
                 {/* right div */}
